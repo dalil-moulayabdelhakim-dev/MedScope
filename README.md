@@ -2,7 +2,7 @@
 
 **MedScope** is a mobile application designed to provide a convenient and efficient way to monitor, visualize, and analyze ECG (Electrocardiogram) signals in real time. It supports signal acquisition via Bluetooth, AI-based ECG classification, and user management tailored for different roles (Doctor, Patient, Receptionist, Lab, Admin).
 
-<img width="912" height="912" alt="Logo" src="https://github.com/user-attachments/assets/643a6ede-5e15-4dc2-b1c8-8c2ead549e58" />
+<img width="200" height="200" alt="Logo" src="https://github.com/user-attachments/assets/643a6ede-5e15-4dc2-b1c8-8c2ead549e58" />
 <h2>MedScope Logo</h2>
 
 
