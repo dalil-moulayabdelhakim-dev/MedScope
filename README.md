@@ -34,13 +34,14 @@
 ### 📸 Screenshots
 | Screen | Description |
 |--------|-------------|
-| ![User fingerprint authentication](https://github.com/user-attachments/assets/d463e0ee-e77e-4bb2-a65b-b3e244854a13) | **User Fingerprint Authentication** – Secure login using biometrics |
-| ![Patient home screen](https://github.com/user-attachments/assets/9f7753ff-8618-42c0-839b-c14de8cfc25e) | **Patient Home Screen** – Dashboard with access to features |
-| ![User profile](https://github.com/user-attachments/assets/e971278d-69d7-42c8-af28-b013ba1a0b44) | **User Profile** – Displays personal and medical information |
-| ![Patient monitoring screen](https://github.com/user-attachments/assets/72f6d943-8596-43a6-b8dd-a763ae700459) | **Live ECG Monitoring** – Real-time ECG signal graph |
-| ![Admin screen](https://github.com/user-attachments/assets/5c122194-24a7-4056-8da8-b4153adc7ac0) | **Admin Panel** – Manage users, view statistics and reports |
-| ![User QR Code](https://github.com/user-attachments/assets/89ef02e5-670a-4c5b-af64-0b426045db23) | **User QR Code** – Share medical profile via QR for quick access |
-| ![Doctor home screen](https://github.com/user-attachments/assets/4818ea7f-a914-48ea-9f07-e89f7ddac9d7) | **Doctor Home Screen** – View assigned patients and reports |
+| <img src="https://github.com/user-attachments/assets/d463e0ee-e77e-4bb2-a65b-b3e244854a13" width="200"/> | **User Fingerprint Authentication** – Secure login using biometrics |
+| <img src="https://github.com/user-attachments/assets/9f7753ff-8618-42c0-839b-c14de8cfc25e" width="200"/> | **Patient Home Screen** – Dashboard with access to features |
+| <img src="https://github.com/user-attachments/assets/e971278d-69d7-42c8-af28-b013ba1a0b44" width="200"/> | **User Profile** – Displays personal and medical information |
+| <img src="https://github.com/user-attachments/assets/72f6d943-8596-43a6-b8dd-a763ae700459" width="200"/> | **Live ECG Monitoring** – Real-time ECG signal graph |
+| <img src="https://github.com/user-attachments/assets/5c122194-24a7-4056-8da8-b4153adc7ac0" width="200"/> | **Admin Panel** – Manage users, view statistics and reports |
+| <img src="https://github.com/user-attachments/assets/89ef02e5-670a-4c5b-af64-0b426045db23" width="200"/> | **User QR Code** – Share medical profile via QR for quick access |
+| <img src="https://github.com/user-attachments/assets/4818ea7f-a914-48ea-9f07-e89f7ddac9d7" width="200"/> | **Doctor Home Screen** – View assigned patients and reports |
+
 
 ---
 
