@@ -1,10 +1,10 @@
-رائع! بما أنك نظّفت المشروع وكل شيء جاهز، إليك قالب احترافي لملف `README.md` لمشروع Android الخاص بك (مثلاً اسمه MedScope – تطبيق تحليل تخطيط القلب ECG):
-
----
-
 ## 📱 MedScope – Mobile ECG Monitoring App
 
 **MedScope** is a mobile application designed to provide a convenient and efficient way to monitor, visualize, and analyze ECG (Electrocardiogram) signals in real time. It supports signal acquisition via Bluetooth, AI-based ECG classification, and user management tailored for different roles (Doctor, Patient, Receptionist, Lab, Admin).
+
+<img width="912" height="912" alt="Logo" src="https://github.com/user-attachments/assets/643a6ede-5e15-4dc2-b1c8-8c2ead549e58" />
+<h2>MedScope Logo</h2>
+
 
 ---
 
@@ -33,7 +33,13 @@
 
 ### 📸 Screenshots
 
-> *(Add screenshots here when available, e.g. main screen, classification result, graph view)*
+> ![User fingerprint authentication](https://github.com/user-attachments/assets/d463e0ee-e77e-4bb2-a65b-b3e244854a13)
+> ![Patient home screen](https://github.com/user-attachments/assets/9f7753ff-8618-42c0-839b-c14de8cfc25e)
+> ![User profile](https://github.com/user-attachments/assets/e971278d-69d7-42c8-af28-b013ba1a0b44)
+> ![Patient monitoring screen](https://github.com/user-attachments/assets/72f6d943-8596-43a6-b8dd-a763ae700459)
+>![Admin screen](https://github.com/user-attachments/assets/5c122194-24a7-4056-8da8-b4153adc7ac0)
+> ![User QR Code](https://github.com/user-attachments/assets/89ef02e5-670a-4c5b-af64-0b426045db23)
+> ![Doctor home screen](https://github.com/user-attachments/assets/4818ea7f-a914-48ea-9f07-e89f7ddac9d7)
 
 ---
 
@@ -89,8 +95,3 @@ Or visit: \[your-portfolio.com]
 ### 📄 License
 
 MIT License
-
----
-
-هل ترغب في نسخة مترجمة بالعربية أو الفرنسية أيضًا؟
-وإذا عندك اسم حقيقي أو بريد تريد إضافته في قسم "Contact"، أخبرني وسأحدثه.
