@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/refresh_layout"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.fragment.home.patient.sections.HomeSectionFragment">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="top|center">
+
+            <androidx.viewpager2.widget.ViewPager2
+                android:id="@+id/view_pager2"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scrollIndicators="bottom"/>
+
+            <com.tbuonomo.viewpagerdotsindicator.DotsIndicator
+                android:id="@+id/dotsIndicator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="10dp"
+                app:dotsColor="@color/blue"
+                app:selectedDotColor="@color/blue"
+                app:dotsSize="5dp"
+                app:dotsSpacing="3dp"
+                app:dotsClickable="true"
+                app:dotsWidthFactor="10"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="Specialities:"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/specialty_recyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/recycler_view_appointment_patient"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:padding="10dp"
+                        android:text="@string/appointments"
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/filter_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="@string/filter"
+                        android:textColor="@color/blue"
+                        android:textStyle="bold"
+                        android:paddingHorizontal="20dp"
+                        android:background="@android:color/transparent"
+                        android:foreground="?attr/selectableItemBackground"
+                        app:tint="@color/blue"
+                        android:textAllCaps="false"
+                        android:drawableEnd="@drawable/ic_filter"/>
+
+                </LinearLayout>
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/appointments_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

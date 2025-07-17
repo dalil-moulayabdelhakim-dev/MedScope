@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="top|center"
+    android:orientation="vertical"
+    android:paddingHorizontal="10dp"
+    tools:context=".ui.fragment.home.patient.sections.HeartBeatMonitoringFragment">
+
+    <LinearLayout
+        android:id="@+id/bluetooth_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Bluetooth disabled"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/bluetooth_enabled_indicator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_uncheck" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Device connected"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/device_connected_indicator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_uncheck" />
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="40dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="Please choose the device." />
+
+        <Spinner
+            android:id="@+id/paired_devices_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/shape_spinner"
+            android:dropDownWidth="300dp"
+            android:dropDownSelector="@color/gray"
+            android:foreground="?attr/selectableItemBackground"
+            android:paddingHorizontal="10dp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/connect_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/shape_submit_button"
+            android:text="Connect"
+            android:textColor="@color/white" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="100dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Before we start monitoring your heartbeat data, you need to allow our application to access Bluetooth." />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/monitor_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="10dp">
+
+            <com.jjoe64.graphview.GraphView
+                android:id="@+id/ecg_graph_view"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:background="@color/white" />
+        </androidx.cardview.widget.CardView>
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="20dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/status"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/status_index"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:background="@color/green" />
+
+            <androidx.legacy.widget.Space
+                android:layout_width="10dp"
+                android:layout_height="match_parent"/>
+
+            <TextView
+                android:id="@+id/status_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="value"
+                android:textColor="@color/gray"
+                android:textSize="25sp" />
+        </LinearLayout>
+        <!--<LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/heart_rate"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/status_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="value"
+                android:textColor="@color/gray"
+                android:textSize="25sp" />
+        </LinearLayout>-->
+
+    </LinearLayout>
+
+</LinearLayout>

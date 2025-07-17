@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "378007553454",
+    "firebase_url": "https://medscopepushnotification-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "medscopepushnotification",
+    "storage_bucket": "medscopepushnotification.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:378007553454:android:9664a0c865818cee88f43f",
+        "android_client_info": {
+          "package_name": "com.dldroid.medscope"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDRuOcXf1Rg19N6f4fZ6WU-6AaElGCYfr0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

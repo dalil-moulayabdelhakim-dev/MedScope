@@ -1,0 +1,123 @@
+<resources>
+    <string name="app_name">MedScope</string>
+    <string name="login">Login</string>
+    <string name="email">Email</string>
+    <string name="password">Password\n</string>
+    <string name="keep_me_login">Keep me login</string>
+    <string name="scan_code">Scan code</string>
+    <string name="home">Home</string>
+    <string name="profile">Profile</string>
+    <string name="more">More</string>
+    <string name="about">About</string>
+    <string name="logout">Logout</string>
+    <string name="exit">Exit</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="later">Later</string>
+
+    <string name="receptionists">Receptionists</string>
+    <string name="search">Search</string>
+    <string name="user_id">User ID</string>
+    <string name="birthday">Birthday</string>
+    <string name="gender2">Gender</string>
+    <string name="receptionist">Receptionist</string>
+    <string name="full_name">Full Name</string>
+    <string name="identity_card_number">Identity card number</string>
+    <string name="date_of_birth">Date of birth</string>
+    <string name="speciality">Speciality</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="gender">Gender:</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="submit">Submit</string>
+    <string name="doctors">Doctors</string>
+    <string name="patients">Patients</string>
+
+
+    <string name="something_went_wrong_please_try_again">Something went wrong please try again</string>
+    <string name="invalid_email">Invalid email</string>
+    <string name="close_navigation_drawer">Close Navigation Drawer</string>
+    <string name="open_navigatiion_drawer">Open Navigation Drawer</string>
+    <string name="connection_error_exprition">No Connection</string>
+    <string name="connection_error_message">please check your connection and back to the app</string>
+    <string name="no_fingerPrint">No biomitric features available on this device.</string>
+    <string name="not_working">Biomitric features are currently unavailable</string>
+    <string name="no_fingerPrint_assigned">no fingerPrint assigned</string>
+    <string name="use_device_password">Use device password to unlock app</string>
+    <string name="scan_your_fingerprint">Scan your fingerprint</string>
+    <string name="permissions_required">Permissions is Required</string>
+    <string name="to_use_medScope_app_you_need_to_grant_all_the_permission">To use MedScope App you need to grant all the permissions.</string>
+    <string name="grant_permissions">Grant Permissions</string>
+    <string name="click_grant_permissions_permissions_allow_all_permissions">click <b>\'Grant permissions\' > </b>Permissions<b> > and </b>allow <b>All permissions</b></string>
+    <string name="do_you_want_to_logout">do you want to logout?</string>
+    <string name="click_back_again">Click back again to exit</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="refresh">Refresh</string>
+    <string name="laboratorians">Laboratorians</string>
+    <string name="admins">Admins</string>
+    <string name="scan_the_code">Scan The Code</string>
+    <string name="done">Done</string>
+    <string name="cancel">Cancel</string>
+    <string name="add_user">Add User</string>
+    <string name="this_feild_canted_be_empty">This faild cant be empty</string>
+    <string name="this_email_not_valid">This email not valid</string>
+    <string name="ok">Ok</string>
+    <string name="user_added_successfully">User added successfully</string>
+    <string name="the_phone_number_must_be_10_digits">the number must be 10 digits</string>
+    <string name="the_identity_card_number_must_be_10_digits">the identity card number must be at least 10 digits</string>
+    <string name="the_full_name_must_be_less_than_50_characters">the_full name must be less than 50 characters</string>
+    <string name="no_data_found">No data found</string>
+    <string name="print">Print</string>
+    <string name="remove">Remove</string>
+    <string name="update">Update</string>
+    <string name="role">Role\n</string>
+    <string name="user_updated_successfully">User updated successfully</string>
+    <string name="invalid_choice">Invalid choice</string>
+    <string name="doctor_information">Doctor information</string>
+
+    <string name="va_vd">Volume up to flach on, Volume down to flash off</string>
+    <string name="camera_permission_is_required">Camera permission is required</string>
+    <string name="cancelled">Camera permission is required</string>
+    <string name="medical_record">Medical Record</string>
+    <string name="reason">Reason</string>
+    <string name="date_time">Date &amp; time</string>
+    <string name="clinic_location">Clinic location</string>
+    <string name="have_you_lost_the_password">Have you lost the password?</string>
+    <string name="filter">Filter</string>
+    <string name="appointments">Appointments:</string>
+    <string name="current_medication">Current Medication</string>
+    <string name="medical_history">Medical History</string>
+    <string name="download">Download</string>
+    <string name="appointment_information">Appointment Information</string>
+    <string name="date">Date</string>
+    <string name="time">Time</string>
+    <string name="location">Location</string>
+    <string name="status">Status:</string>
+    <string name="pending">Pending</string>
+    <string name="accepted">Accepted</string>
+    <string name="completed">Completed</string>
+    <string name="canceled">Canceled</string>
+    <string name="no_value">No value</string>
+    <string name="heartbeat">HeartBeat</string>
+    <string name="heart_rate">Heart rate:</string>
+
+    <string-array name="roles">
+        <item>User role</item>
+        <item>Patient</item>
+        <item>Doctor</item>
+        <item>Admin</item>
+        <item>Laboratorian</item>
+        <item>Receptionist</item>
+    </string-array>
+
+    <string-array name="doctor_greetings">
+        <item>Good day, Doctor. I hope you\'re doing well.</item>
+        <item>Hello, Doctor. Wishing you a productive day.</item>
+        <item>Hi Doctor, it\'s great to see you.</item>
+        <item>Greetings, Doctor. I trust everything is going well.</item>
+        <item>Welcome back, Doctor!</item>
+        <item>Nice to meet you, Doctor.</item>
+        <item>Hello, Doctor! Ready for today’s tasks?</item>
+    </string-array>
+</resources>

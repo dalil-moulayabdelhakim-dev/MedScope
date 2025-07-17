@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bottom_nav_patient_navigation"
+    app:startDestination="@id/home_section">
+
+    <fragment
+        android:id="@+id/home_section"
+        android:name="com.dldroid.medscope.ui.fragment.home.patient.sections.HomeSectionFragment"
+        android:label="@string/home"
+        tools:layout="@layout/fragment_home_section" />
+    <fragment
+        android:id="@+id/medical_record_section"
+        android:name="com.dldroid.medscope.ui.fragment.home.patient.sections.MedicalRecordSectionFragment"
+        android:label="@string/medical_record"
+        tools:layout="@layout/fragment_medical_record_section" />
+    <fragment
+        android:id="@+id/heartBeat_monitoring_section"
+        android:name="com.dldroid.medscope.ui.fragment.home.patient.sections.HeartBeatMonitoringFragment"
+        android:label="@string/heartbeat"
+        tools:layout="@layout/fragment_heart_beat_monitoring" />
+</navigation>

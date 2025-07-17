@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bottom_nav_admin_navigation"
+    app:startDestination="@id/adminSection">
+
+    <fragment
+        android:id="@+id/adminSection"
+        android:name="com.dldroid.medscope.ui.fragment.home.admin.section.AdminSection"
+        android:label="@string/admins"
+        tools:layout="@layout/fragment_admin_section_helper" />
+    <fragment
+        android:id="@+id/doctorSection"
+        android:name="com.dldroid.medscope.ui.fragment.home.admin.section.DoctorSection"
+        android:label="@string/doctors"
+        tools:layout="@layout/fragment_admin_section_helper" />
+    <fragment
+        android:id="@+id/patientSection"
+        android:name="com.dldroid.medscope.ui.fragment.home.admin.section.PatientSection"
+        android:label="@string/patients"
+        tools:layout="@layout/fragment_admin_section_helper" />
+    <fragment
+        android:id="@+id/laboratorianSection"
+        android:name="com.dldroid.medscope.ui.fragment.home.admin.section.LaboratorianSection"
+        android:label="@string/laboratorians"
+        tools:layout="@layout/fragment_admin_section_helper" />
+    <fragment
+        android:id="@+id/receptionistSection"
+        android:name="com.dldroid.medscope.ui.fragment.home.admin.section.ReceptionistSection"
+        android:label="@string/receptionists"
+        tools:layout="@layout/fragment_admin_section_helper" />
+</navigation>

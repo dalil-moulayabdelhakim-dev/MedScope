@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.fragment.home.doctor.sections.DoctorHomeSectionFragment">
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/refresh_layout">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="top|center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/jura_bold"
+                        android:text="@string/doctor_information"
+                        android:textColor="@color/black"
+                        android:textSize="27sp" />
+
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="top|center"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="90dp"
+                                android:gravity="center"
+                                android:orientation="horizontal">
+
+                                <androidx.cardview.widget.CardView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_margin="8dp"
+                                    app:cardCornerRadius="10dp"
+                                    app:cardElevation="4dp">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:orientation="horizontal"
+                                        android:paddingHorizontal="30dp"
+                                        android:paddingVertical="10dp">
+
+                                        <ImageView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="match_parent"
+                                            android:layout_marginEnd="10dp"
+                                            android:src="@drawable/pager_info_dr_pats" />
+
+                                        <LinearLayout
+                                            android:layout_width="0dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="1"
+                                            android:orientation="vertical">
+
+                                            <TextView
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:fontFamily="@font/jura_bold"
+                                                android:text="@string/patients"
+                                                android:textAlignment="center"
+                                                android:textColor="@color/gray"
+                                                android:textSize="10sp" />
+
+                                            <TextView
+                                                android:id="@+id/patients_number"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:fontFamily="@font/jura_bold"
+                                                android:text="000"
+                                                android:textAlignment="center"
+                                                android:textColor="@color/black"
+                                                android:textSize="23sp" />
+                                        </LinearLayout>
+                                    </LinearLayout>
+                                </androidx.cardview.widget.CardView>
+
+                                <androidx.cardview.widget.CardView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_margin="8dp"
+                                    app:cardCornerRadius="10dp"
+                                    app:cardElevation="4dp">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:orientation="horizontal"
+                                        android:paddingHorizontal="30dp"
+                                        android:paddingVertical="10dp">
+
+                                        <ImageView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="match_parent"
+                                            android:layout_marginEnd="10dp"
+                                            android:src="@drawable/pager_info_dr_appoint" />
+
+                                        <LinearLayout
+                                            android:layout_width="0dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="1"
+                                            android:orientation="vertical">
+
+                                            <TextView
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:fontFamily="@font/jura_bold"
+                                                android:text="@string/appointments"
+                                                android:textAlignment="center"
+                                                android:textColor="@color/gray"
+                                                android:textSize="10sp" />
+
+                                            <TextView
+                                                android:id="@+id/appointments_number"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:fontFamily="@font/jura_bold"
+                                                android:text="000"
+                                                android:textAlignment="center"
+                                                android:textColor="@color/black"
+                                                android:textSize="23sp" />
+                                        </LinearLayout>
+                                    </LinearLayout>
+                                </androidx.cardview.widget.CardView>
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </HorizontalScrollView>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:id="@+id/pb_doctor_home"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:visibility="gone">
+
+                            <ProgressBar
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/resL"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/textView4"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="10dp"
+                                android:text="Appointments:"
+                                android:textColor="@color/black"
+                                android:textSize="20sp" />
+
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:id="@+id/appointments_list"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+        </RelativeLayout>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+</FrameLayout>

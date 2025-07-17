@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".manager.patient.view.ViewDoctorSpecialityActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:id="@+id/topNav"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/back"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@android:color/transparent"
+                android:foreground="?attr/selectableItemBackground"
+                android:src="@drawable/ic_arrow_back" />
+
+            <TextView
+                android:id="@+id/specialty_name"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/jura_bold"
+                android:text="Name"
+                android:layout_marginStart="10dp"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:id="@+id/refresh_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:id="@+id/progress_bar"
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center">
+                    <ProgressBar
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/nothing_to_show"
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/img_nothing"/>
+                </LinearLayout>
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/doctors_list_specialty"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+            </LinearLayout>
+
+
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    </LinearLayout>
+</RelativeLayout>

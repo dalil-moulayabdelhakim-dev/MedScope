@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item android:title="@string/home"
+        android:id="@+id/home_section"
+        android:icon="@drawable/ic_home"/>
+    <item android:title="@string/heartbeat"
+        android:id="@+id/heartBeat_monitoring_section"
+        android:icon="@drawable/ic_monitor"/>
+    <item android:title="@string/medical_record"
+        android:id="@+id/medical_record_section"
+        android:icon="@drawable/ic_file" />
+</menu>

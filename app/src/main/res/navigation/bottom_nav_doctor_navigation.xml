@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bottom_nav_doctor_navigation"
+    app:startDestination="@id/home_section">
+
+    <fragment
+        android:id="@+id/home_section"
+        android:name="com.dldroid.medscope.ui.fragment.home.doctor.sections.DoctorHomeSectionFragment"
+        android:label="@string/home"
+        tools:layout="@layout/fragment_doctor_home_section" />
+    <fragment
+        android:id="@+id/patients_section"
+        android:name="com.dldroid.medscope.ui.fragment.home.doctor.sections.DoctorPatientsSectionFragment"
+        android:label="@string/patients"
+        tools:layout="@layout/fragment_doctor_patients_section" />
+</navigation>

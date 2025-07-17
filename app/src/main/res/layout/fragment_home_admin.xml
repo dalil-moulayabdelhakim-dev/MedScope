@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragment.home.admin.AdminHomeFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <fragment
+            android:id="@+id/fragment"
+            android:name="androidx.navigation.fragment.NavHostFragment"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:defaultNavHost="true"
+            app:navGraph="@navigation/bottom_nav_admin_navigation"
+            android:layout_alignParentTop="true"
+            android:layout_above="@id/bottom_navigation_view"/>
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottom_navigation_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/ThemeOverlay.AppCompat.DayNight"
+            app:itemTextColor="@color/black"
+            app:itemIconTint="@color/black"
+            app:elevation="10dp"
+            app:labelVisibilityMode="labeled"
+            app:compatShadowEnabled="true"
+            android:background="@color/blue_light"
+            app:menu="@menu/bottom_nav_admin_menu"
+            android:layout_alignParentBottom="true"/>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/add_user_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_add"
+            android:backgroundTint="@color/blue_light2"
+            android:tint="@color/blue_light"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="120dp"
+            />
+    </RelativeLayout>
+
+
+</FrameLayout>

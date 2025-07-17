@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <!-- The permission to use Bluetooth features -->
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <!-- The permission to connect to Bluetooth devices -->
+    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
+    <!-- The permission to administer Bluetooth settings and connections -->
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.BLUETOOTH_SCAN" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <!-- The permission to access the internet -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_SPECIAL_USE"/>
+
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        tools:ignore="ScopedStorage" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:allowBackup="false"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MedScope"
+        android:usesCleartextTraffic="true"
+        android:enableOnBackInvokedCallback="true"
+        tools:targetApi="31">
+        <activity
+            android:name=".manager.patient.view.ViewAppointmentForPatientActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.fragment.home.patient.CreateAppointmentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".manager.patient.view.ViewDoctorSpecialityActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.fragment.home.admin.ViewUserDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.SplashScreenActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.HomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".manager.MyCaptureActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.dldroid.medscope.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <service
+            android:name=".manager.services.AppointmentNotificationService"
+            android:foregroundServiceType="specialUse" />
+
+    </application>
+
+</manifest>

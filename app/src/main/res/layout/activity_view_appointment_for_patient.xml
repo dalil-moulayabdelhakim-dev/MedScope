@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/refresh_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".manager.patient.view.ViewAppointmentForPatientActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/top_action_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/back_button"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@android:color/transparent"
+                android:foreground="?attr/selectableItemBackground"
+                android:src="@drawable/ic_arrow_back" />
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/jura_bold"
+                android:text="@string/appointments"
+                android:layout_marginStart="10dp"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/top_action_bar">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="18dp"
+                    android:orientation="horizontal"
+                    android:padding="20dp">
+
+                    <ImageView
+                        android:id="@+id/profile_picture"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_marginEnd="10dp"
+                        android:background="@drawable/shape_circle"
+                        android:src="@drawable/ic_profile" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/jura_bold"
+                            android:ellipsize="marquee"
+                            android:focusable="true"
+                            android:focusableInTouchMode="true"
+                            android:marqueeRepeatLimit="marquee_forever"
+                            android:scrollHorizontally="true"
+                            android:singleLine="true"
+                            android:textColor="@color/black"
+                            android:textSize="25sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/jura_bold"
+                        android:text="@string/appointment_information"
+                        android:textColor="@color/blue"
+                        android:textSize="20sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:padding="10dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/jura_bold"
+                                android:text="@string/date"
+                                android:textColor="@color/black"
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/date_text_view"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/jura_bold"
+                                android:textColor="@color/gray"
+                                android:textSize="18sp" />
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:padding="10dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/jura_bold"
+                                android:text="@string/time"
+                                android:textColor="@color/black"
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/time_text_view"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/jura_bold"
+                                android:textColor="@color/gray"
+                                android:textSize="18sp" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:padding="10dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/jura_bold"
+                                android:text="@string/clinic_location"
+                                android:textColor="@color/black"
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/location_text_view"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/jura_bold"
+                                android:textColor="@color/gray"
+                                android:textSize="18sp" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:padding="10dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/jura_bold"
+                                android:text="@string/reason"
+                                android:textColor="@color/black"
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/reason_text_view"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/jura_bold"
+                                android:textColor="@color/gray"
+                                android:textSize="18sp" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:padding="10dp">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/jura_bold"
+                                android:text="@string/status"
+                                android:textColor="@color/black"
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
+
+                            <ImageView
+                                android:id="@+id/status_indicator"
+                                android:layout_width="8dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginEnd="5dp" />
+
+
+                            <TextView
+                                android:id="@+id/status_text_view"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/jura_bold"
+                                android:textColor="@color/gray"
+                                android:textSize="18sp" />
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/jura_bold"
+                        android:text="@string/doctor_information"
+                        android:textColor="@color/blue"
+                        android:textSize="20sp" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:padding="10dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/jura_bold"
+                                android:text="@string/email"
+                                android:textColor="@color/black"
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/email_text_view"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/jura_bold"
+                                android:textColor="@color/gray"
+                                android:textSize="18sp" />
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:padding="10dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/jura_bold"
+                                android:text="@string/speciality"
+                                android:textColor="@color/black"
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/specialty_text_view"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/jura_bold"
+                                android:textColor="@color/gray"
+                                android:textSize="18sp" />
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:padding="10dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/jura_bold"
+                                android:text="@string/phone_number"
+                                android:textColor="@color/black"
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/phone_text_view"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/jura_bold"
+                                android:textColor="@color/gray"
+                                android:textSize="18sp" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
